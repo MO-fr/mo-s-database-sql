@@ -1,0 +1,17 @@
+Reflection Questions
+
+How do primary and foreign keys help maintain data integrity?
+- Primary keys ensure each record is unique, and foreign keys link related data across tables, preventing invalid or missing relationships.
+
+
+What insights can be gained by joining multiple tables?
+- Joining tables combines data from different sources, allowing you to see relationships, such as which customers placed specific orders or which products are most ordered.
+
+How can aggregate functions summarize data?
+- Aggregate functions calculate totals, averages, counts, and other summaries, making it easy to analyze large datasets for trends and key metrics.
+
+What types of analyses are enabled by date functions?
+-  Date functions enable time-based analyses, like tracking monthly sales, comparing year-over-year performance, or identifying peak shopping times.
+
+How might you extend this database for additional e-commerce features?
+ - You could add features like customer wishlists, product categories, shipping tracking, or support for promotional discounts to enhance functionality.
