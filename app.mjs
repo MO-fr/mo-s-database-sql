@@ -12,12 +12,13 @@ console.log("process.env", process.env.DB_NAME);
 // We're using the database credentials (name, user, password) stored in environment variables.
 const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
   host: 'localhost', // This means the database is running on our local machine.
+  port: 3306,
   dialect: 'mysql' // "mysql" is the type of database we're connecting to.
 });
 
 // Define a "Customer" model to represent the customers in our database.
 // A model is like a blueprint that describes the structure of our data.
-const Customer = sequelize.define('Customer', {
+const customers = sequelize.define('customers', {
   // This is the unique ID for each customer. It increases automatically for every new customer.
   customer_id: {
     type: DataTypes.INTEGER,
